@@ -29,7 +29,7 @@ Delégalas a un subagente con model sonnet (haiku falla en tareas de varios paso
 Confirma con el usuario antes de enviar mensajes, pagar, borrar o escribir contraseñas.
 
 ## 6. Setup (una sola vez)
-- `sudo pacman -S ydotool wtype tesseract tesseract-data-spa`
+- `sudo pacman -S grim ydotool wtype tesseract tesseract-data-spa python`
 - `echo uinput | sudo tee /etc/modules-load.d/uinput.conf`
 - Regla udev `/etc/udev/rules.d/80-uinput.rules`:
   `KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"`
